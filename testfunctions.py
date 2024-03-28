@@ -1,20 +1,6 @@
 import unittest
 
-def custom_shuffle(lst):
-    shuffled_lst = lst[:]  # Create a copy of the list to avoid modifying the original
-    for i in range(len(shuffled_lst)):
-        rand_index = random.randint(0, len(shuffled_lst) - 1)
-        shuffled_lst[i], shuffled_lst[rand_index] = shuffled_lst[rand_index], shuffled_lst[i]
-    return shuffled_lst
-
-def remove_duplicates(lst):
-    unique_lst = []
-    for item in lst:
-        if item not in unique_lst:
-            unique_lst.append(item)
-    return unique_lst
-
-class TestShuffleAndRemoveDuplicates(unittest.TestCase):
+class ListFuncitons(unittest.TestCase):
 
     def test_custom_shuffle(self):
         # Test custom_shuffle function
