@@ -17,6 +17,8 @@ class ListFuncitons(unittest.TestCase):
         # Test remove_duplicates function
         lst_with_duplicates = [1, 2, 2, 3, 4, 4, 5]
         unique_list = remove_duplicates(lst_with_duplicates)
+        for item in unique_list:
+            self.assertEqual(unique_list.count(item),1)
 
 
 if __name__ == '__main__':
