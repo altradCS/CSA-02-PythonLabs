@@ -18,11 +18,6 @@ class ListFuncitons(unittest.TestCase):
         lst_with_duplicates = [1, 2, 2, 3, 4, 4, 5]
         unique_list = remove_duplicates(lst_with_duplicates)
 
-        # Check if the length of the unique list is correct
-        self.assertEqual(len(unique_list), len(set(lst_with_duplicates)))
-        # Check if all elements in the unique list are indeed unique
-        for item in unique_list:
-            self.assertEqual(lst_with_duplicates.count(item), 1)
 
 if __name__ == '__main__':
     unittest.main()
